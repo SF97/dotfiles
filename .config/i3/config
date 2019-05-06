@@ -200,6 +200,9 @@ exec spotify
 
 exec dropbox start
 
+assign[class="Thunderbird"] $ws8
+exec thunderbird
+
 assign [class="KeePass2"] $ws9
 exec keepass2
 
