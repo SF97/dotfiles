@@ -58,7 +58,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = mpd previous spotify next
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature popup-calendar powermenu
 
 tray-position = right
 tray-padding = 2
@@ -470,3 +470,10 @@ format-padding = 4
 format-underline = #1db954
 line-size = 1
 click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/scripts/popup_calendar/popup_calendar.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/popup_calendar/popup_calendar.sh --popup
+format-underline = #0a6cf5

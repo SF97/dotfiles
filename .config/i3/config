@@ -209,5 +209,7 @@ exec thunderbird
 assign [class="KeePass2"] $ws9
 exec keepass2
 
+for_window [class="Yad" title="yad-calendar"] floating enable
+
 exec_always nm-applet
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
